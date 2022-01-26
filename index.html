@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="app-wrapper">
         <div class="weather-app">
+            <div class="overview">
     <h1>Tokyo</h1>
 <ul>
     <li>Wednesday 11:53</li>
@@ -21,8 +23,13 @@
 </ul>
 <div class="row">
     <div class="col-md-6">
-        <img src="weatherIcon" alt="weatherIcon"/>
-    6°C | °F
+        <div class="clearfix weather-temp">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" 
+        alt="weatherIcon" class="float-left"/>
+        
+    <strong>6</strong> <span class="units">°C | °F</span>
+          
+        </div>
     </div>
     <div class="col-md-6">
         <ul>
@@ -39,9 +46,11 @@
     </div>
 </div>
 </div>
+</div>
 <small>
     This app was coded by <a href="https://github.com/KT-Japan/vanilla-weather-app" target="_blank">Katherine Jackson</a>
 </small>
+</div>
 </div>
 
 <script src="src/script.js"></script>
