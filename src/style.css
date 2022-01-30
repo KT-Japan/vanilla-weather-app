@@ -24,6 +24,12 @@ strong{
     line-height: 25px;
     
     }
+
+    .weather-temp .active {
+        color: black;
+        text-decoration: none;
+        cursor: default;
+    }
 ul {
     margin: 0 ;
     padding: 0 ;
