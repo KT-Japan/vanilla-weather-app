@@ -22,7 +22,7 @@ function formateDate(timestamp){
 }
 
 function displayTemperature(response){
-    console.log(response.data);
+    
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city"); 
     let conditionsElement = document.querySelector("#conditions");
@@ -45,10 +45,27 @@ function displayTemperature(response){
     
 }
 
-let apiKey ="7e5b42f15f07c7e23193e5065b6e4cf9";
-let city = "London";
-let apiUrl =`https://api.openweathermap.org/data/2.5/
+function search(city) {
+    let apiKey = "7e5b42f15f07c7e23193e5065b6e4cf9";
+let apiUrl = `https://api.openweathermap.org/data/2.5/
 weather?q=${city}
 &appid=${apiKey}
 &units=metric`;
+    
 axios.get(apiUrl).then(displayTemperature);
+
+}
+
+function dataSubmit(event) {
+    event.preventDefault();
+    let searchBarElement = document.querySelector("#searchBar");
+    search(searchBarElement.value);
+    
+}
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", dataSubmit);
+
+search("Tokyo");
