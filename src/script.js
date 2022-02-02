@@ -21,6 +21,27 @@ function formateDate(timestamp){
     return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast(){
+let forecastElement = document.querySelector("#forecast");
+let forecastHTML = `<div class="row">`;
+let days = ["Fri", "Sat", "Sun", "Mon", "Tues"];
+days.forEach(function (day) {
+    
+    forecastHTML = forecastHTML + 
+    `
+    <div class="col-2">
+        ${day}
+        <br/> <img src="#" alt ="W" width ="40"/>
+       <br/> 0°C
+    </div>
+    
+    `;
+})
+
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response){
     
     let temperatureElement = document.querySelector("#temperature");
@@ -94,3 +115,4 @@ let celciusLink = document.querySelector("#celciusLink");
 celciusLink.addEventListener("click", showCelcius);
 
 search("Tokyo");
+displayForecast();
