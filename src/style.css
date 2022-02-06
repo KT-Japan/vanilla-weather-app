@@ -11,13 +11,7 @@ h1{
     
     
 }
-img {
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 60px;
-    width: 60px;
-}
+
 strong{
     font-size: 30px;
     font-weight: 400;
@@ -29,6 +23,14 @@ strong{
         color: black;
         text-decoration: none;
         cursor: default;
+    }
+
+    .weather-temp img {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 70px;
+        width: 70px; 
     }
 ul {
     margin: 0 ;
@@ -70,3 +72,5 @@ li {
     font-size: 15px;
     
 }
+
+
