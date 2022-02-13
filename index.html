@@ -14,21 +14,12 @@
     <div class="container">
         <div class="app-wrapper">
         <div class="weather-app">
-            <form id="search-form" class="mb-3">
-                <div class="row">
-<div class="col-3">
-                <input type="search" id="searchBar" placeholder="Search a city"/>
-            </div>
-            <div class="col-3">
-                <input type="submit" id="searchButton" value="search"/>
-            </div>
-            </div>
-            </form>
+            
             <div class="overview">
     <h1 id="city">City</h1>
 <ul>
-    <li>Last updated: <span id="date">Day & Time</span></li>
-    <li id="conditions">
+    <li class="time-update">Last updated: <span id="date">Day & Time</span></li>
+    <li class="conditions" id="conditions">
         Conditions
     </li>
 </ul>
@@ -38,12 +29,12 @@
         <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" 
         alt="weatherIcon" id ="icon" class="float-left"/>
         
-    <strong id="temperature">0</strong> <span class="units"><a href="#" id="celciusLink" class="active">°C</a> | <a href="#" id="fahrenLink">°F </a></span>
+    <strong id="temperature">0</strong> <span class="units"><a href="#" id="celciusLink" class="active">°C</a> | <a href="#" id="fahrenLink" class="inactive">°F </a></span>
           
         </div>
     </div>
     <div class="col-md-6">
-        <ul>
+        <ul class="humidityWind">
             <li>
                 <!Precipitation: 10% --->
             </li>
@@ -57,15 +48,27 @@
     </div>
 </div>
 </div>
+<div class="forecastText"> Forecast</div>
 <div class="weather-forecast" id="forecast">
 
 <! forecast code in js file --->
 
 </div>
+<hr />
+<form id="search-form" class="mb-3">
+    <div class="row">
+<div class="col-3">
+    <input type="search" id="searchBar" placeholder="Search a city"/>
 </div>
-<small>
-    This app was coded by <a href="https://github.com/KT-Japan/vanilla-weather-app" target="_blank">Katherine Jackson</a>
-</small>
+<div class="col-3">
+    <input type="submit" id="searchButton" value="search"/>
+</div>
+</div>
+</form>
+</div>
+<div class="name">
+    Coded by <a href="https://github.com/KT-Japan/vanilla-weather-app" target="_blank">Katherine Jackson</a>
+</div>
 </div>
 </div>
 

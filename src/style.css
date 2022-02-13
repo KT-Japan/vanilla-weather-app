@@ -1,17 +1,42 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:cursive, 'Courier New', Courier, monospace;
+    background-color: white;
 }
 
 h1{
     color: black;
     display: block;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 600;
-    
-    
+    text-align: center;
+    padding-top: 20px;
     
 }
 
+.time-update {
+    text-align: center;
+    padding: 10px;
+}
+
+.conditions {
+    margin-left: 30px;
+    padding-bottom: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.humidityWind{
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+form {
+    padding-top: 20px;
+    margin-left: 0 auto;
+    text-align: center;
+    
+    
+}
 strong{
     font-size: 30px;
     font-weight: 400;
@@ -24,6 +49,7 @@ strong{
         text-decoration: none;
         cursor: default;
     }
+    
 
     .weather-temp img {
         margin-right: 10px;
@@ -48,9 +74,14 @@ li {
     
 }
 .weather-forecast {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(163, 162, 162, 0.541);
+    padding: 10px 0 10px 0;
 }
 .app-wrapper{
     max-width: 600px;
@@ -60,17 +91,38 @@ li {
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
-    border: 1px solid rgb(90, 89, 89);
+    border: 3px solid #EC6E4C;
     border-radius: 5px;
+    background-color: #F2F2F2;
 }
 .overview {
     margin: 0 auto;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(163, 162, 162, 0.541);
 
 }
 .weather-temp .units{
     position: relative;
     font-size: 15px;
     
+}
+
+hr {
+    border: 1.5px solid #EC6E4C;
+}
+.name {
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.forecastText{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
 
